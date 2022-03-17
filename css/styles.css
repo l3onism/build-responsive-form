@@ -1,2 +1,129 @@
 /* CSS Variables - https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
 
+/* globally accessible */
+:root {
+    --white: #fff;
+    /* dk = dark  */
+    --dk-blue: #0d1238;
+    /* lg = light */
+    --lg-blue: #272f70;
+    --dk-green: #374d12;
+    --lg-green: #54761b; 
+}
+
+body {
+    background-color: var(--dk-blue);
+    background-image: url(../img/oriental-tiles.png);
+    color: var(--white);
+}
+
+/* ********* typography ********* */
+h2 {
+    font-family: sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+/* *********** section / form *********** */
+section {
+    /* Transparency */
+    background-color: rgba(13, 18, 56, 0.7);
+    margin-top: 5rem;
+    padding: 1rem;
+}
+
+fieldset {
+    border: none;
+    background-color: var(--white);
+    color: var(--dk-blue);
+    border-radius: 5px;
+    padding: 0 0 1rem 0;
+}
+
+fieldset > p {
+    background-color: var(--lg-green);
+    color: var(--white);
+    padding: 0.75rem;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+}
+
+fieldset > div {
+    padding: 0 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+/* Puts the content on top of the box */
+fieldset label {
+    display: block;
+}
+
+fieldset input {
+    width: 100%;
+    padding: 0 0.5rem;
+    line-height: 2.5rem;
+    border: 1px solid #a2adb7;
+    border-radius: 5px;
+}
+
+.interest {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.flex-item,
+.tos {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* attribute seletor */
+input[type=radio],
+input[type=checkbox] {
+    width: unset;
+}
+
+a {
+    color: var(--lg-green);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.claim > input {
+    background-color: var(--dk-blue);
+    color: var(--white);
+}
+
+@media screen and (min-width:1000px) {
+    .flex-container {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .interest {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 15rem;
+    }
+
+    .flex-item {
+        padding-bottom: 0.5rem;
+    }
+
+    .form {
+        min-width:650px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .inner-container {
+        width: 1400px;
+        margin: 0 auto;
+    }
+}

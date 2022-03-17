@@ -8,6 +8,102 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <section class="flex-container inner-container">
+        <div>
+            <h2>Learn Web Design, Coding, & Much More</h2>
     
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi libero accusantium aliquam eligendi similique iste delectus magnam beatae hic! Aspernatur quaerat et totam. Dicta tempora harum deleniti iste quis necessitatibus!</p>
+        </div>
+
+        <div class="form">
+            <!-- When setting up a form use <form></form> -->
+            <form action="#" method="post" name="signup-form">
+                <!-- groups -->
+                <fieldset>
+                    <p>Try it free for 7 days starting at 25$ a month</p>
+    
+                    <!-- Radio information  -->
+                    <h3>Field of Interest</h3>
+                    
+                    <div class="interest">
+                        <div>
+                            <div class="flex-item">
+                                <input id="html" name="area-interest" type="radio" value="html" autofocus>
+                                <label for="html">HTML</label>
+                            </div>
+            
+                            <div class="flex-item">
+                                <input type="radio" name="area-interest" id="css" value="css">
+                                <label for="css">CSS</label>
+                            </div>
+                        </div>
+        
+                        <div>
+                            <div class="flex-item">
+                                <input type="radio" name="area-interest" id="javascript" value="javascript">
+                                <label for="javascript">JavaScript</label>
+                            </div>
+            
+                            <div class="flex-item">
+                                <input type="radio" name="area-interest" id="uxui" value="uxui">
+                                <label for="uxui">UX/UI</label>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- ********** -->
+                    <div>
+                        <label for="f-name">First Name</label>
+                        <input id="f-name" name="f-name" type="text" required minlength="3">
+                    </div>
+    
+                    <div>
+                        <label for="l-name">Last Name</label>
+                        <input id="l-name" name="l=name" type="text" required minlength="3" >
+                    </div>
+    
+                    <div>
+                        <label for="email">Email Address</label>
+                        <input id="email" name="email" type="email" placeholder= "ie. jsmith@.com"> 
+                    </div>
+    
+                    <div>
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="text" autocomplete="off" required minlength="3">
+                    </div>
+    
+                    <!-- radio information cont. -->
+                    <div class="tos">
+                        <label for="subscribe">By signing up you are agreeing to our Terms of Service <a href="#">Terms of Service</a></label>
+                        <input type="checkbox" name="subscribe" id="subscribe">
+                    </div>
+                    
+                    <!-- *************** -->
+                    <div class="claim">
+                        <input type="submit" value="Claim Your Free Trial">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+    <!-- form attribrutes -->
+    <!-- name 
+        value 
+        type 
+        id 
+        for
+
+        disabled
+        novelidate
+        autofocus
+        required 
+        autocomplete
+        minlegth
+        maxlenth 
+        pattern -->
+        
+        
+        
 </body>
 </html>
